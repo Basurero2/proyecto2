@@ -1,0 +1,265 @@
+@font-face {
+	font-family: Social-Media-Circled;
+	src: url(../tipografias/Social-Media-Circled.otf);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+
+}
+
+:root {
+	--violeta: hsl(257, 40%, 49%);
+ 	--Magenta:hsl(300, 69%, 71%);
+}
+
+
+/*### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 600*/
+
+
+img {
+	box-sizing: border-box;
+}
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+
+}
+
+p, span, h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.fondo {
+	
+	background: var(--violeta);
+	background-image: url(file:///C:/Users/PC/Desktop/Fronted%20Mentor/pagina%202/images/bg-desktop.svg);
+	background-attachment: contain;
+	background-size: cover;
+	
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	
+	
+}	
+
+	.cuerpo {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+
+		
+
+	}
+		.header {
+			width: 150px;
+			padding-left: 50px;
+			padding-top: 30px;
+			padding-bottom: 50px;
+		}
+			.header img {
+				width: 100%;
+			}
+
+		.main {
+			display: flex;
+			flex-flow: row nowrap;
+			
+
+		}
+			.imagen {
+				flex: 2 1 100%;
+				max-width: 45%;
+				padding-left: 50px;
+				justify-content: center;
+				align-items: center;
+				display: flex;
+
+
+			}
+				.imagen img {
+					width: 100%;
+					object-fit: contain;
+				}
+			.texto {
+				flex: 1 1 auto;
+				padding-left: 45px;
+
+
+			}
+				.texto h2 {
+					font-size: 28px;
+					font-weight: 600;
+					color: #fff;
+					margin-bottom: 18px;
+					margin-top: 28px;
+				}
+				.texto p {
+					font-size: 14px;
+					line-height: 19px;
+					color: #ddd;
+					font-weight: 400;
+					margin-bottom: 20px;
+					padding-right: 100px;
+				}
+
+				.boton {
+					padding: 10px 50px;
+					border-radius: 20px;
+					border: none;
+					background: #fff;
+					
+				}
+					.boton h4 {
+						font-size: 12px;
+						color: var(--violeta);
+						text-align: center;
+					}
+
+
+
+		.footer {
+			display: flex;
+			flex-flow: column wrap;
+			min-height: 130px;
+			/*background: black;*/
+			justify-content: center;
+		}
+			.footer p {
+				text-align: right;
+				flex-flow: row nowrap;
+				justify-content: flex-end;
+				column-gap: 15px;
+				padding-right: 40px;
+				/*background: red;*/
+				height: 100%;
+
+			}
+
+			.footer p span {
+				margin-left: 10px;
+				font-family: Social-Media-Circled;
+				color: #fff;
+				border-radius: 50%; 
+				background: transparent;
+				border: .5px solid #fff;
+				font-size: 25px;
+
+
+
+			}
+
+@media screen and (max-width: 720.75px) {
+	
+	.fondo {
+		background-image: url(file:///C:/Users/PC/Desktop/Fronted%20Mentor/pagina%202/images/bg-mobile.svg);
+		background-position: top;
+		
+
+	}
+
+	.main {
+		flex-direction: column ;
+		align-items: center;
+
+	}
+		.imagen {
+			max-width: 100%;
+			padding: 0 30px;
+		}
+
+		.imagen img {
+			width: 100%;
+			
+		}
+
+		.texto {
+			text-align: center;
+			padding-left: 0;
+			padding: 0 20px;
+		}
+
+		.texto h2 {
+
+		}
+
+		.texto p{
+			padding-right: 0;
+		}
+
+
+
+
+	.footer {
+		align-items: center;
+		justify-content: center;
+	}
+	.footer p {
+		text-align: center;
+		padding-right: 0;
+
+	}
+	.footer p span {
+		margin-left: 0;
+		text-align: center;
+
+		
+	}
+		.redes:first-child {
+			margin-right: 20px;
+		}
+		.redes:last-child {
+			margin-left: 20px;
+		}
+
+
+	.boton {
+		width: 50%;
+		align-items: center;
+	}
+	.boton h4 {
+
+	}
+}
+
+@media screen and (max-width: 375px) {
+		
+	.fondo {
+				
+		background-image: url(file:///C:/Users/PC/Desktop/Fronted%20Mentor/pagina%202/images/bg-mobile.svg);
+		background-position: top;
+		background-size: auto;
+	}
+		
+
+	.texto {
+		padding: 0 40px;
+
+	}
+
+	.texto h2 {
+		padding: 0;
+		font-size: 20px;
+	}
+	.boton {
+		width: 70%;
+	
+	}
+
+}
+
+@media screen and (max-width: 291px) {
+	.header {
+		padding-left: 2px;
+		align-items: center;
+	}
+
+	.boton {
+		width: 100%;
+	}
+}
